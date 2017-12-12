@@ -14,15 +14,19 @@ describe Fizzbuzz do
   # it 'should isolate the 3rd element in the fizzbuzz array' do
   #   expect(@fizz.fizzbuzz_array[2]).to be_kind_of(String)
   # end
+
   # it 'should isolate the 5th element in the fizzbuzz array' do
   #   expect(@fizz.fizzbuzz_array[4]).to be_kind_of(String)
   # end
+
   # it 'should isolate the 15th element in the fizzbuzz array' do
   #   expect(@fizz.fizzbuzz_array[-1]).to be_kind_of(String)
   # end
+
   # it 'should recoginise numbers in array' do
   #   expect(@fizz.fizzbuzz_array[1]).to be_kind_of(Integer)
   # end
+  
   it 'should corrcetly apply fizzbuzz up to and inc 15' do
     @fizz.fizzbuzz_iterator(1,15)
   end
