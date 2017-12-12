@@ -13,4 +13,4 @@ users = {
   }
 }
 
-users.each { |key| puts key }
+users.each_value { |value| puts value }
