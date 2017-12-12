@@ -3,11 +3,11 @@ require 'fiboseq'
 describe EvnFiboseq do
 
   before(:each) do
-    @evnseq = EvnFiboseq.new
+    @sumevnseq = EvnFiboseq.new
   end
 
   it 'should have values of the fibonacci sequence in order' do
-    expect(@evnseq.fiboseq[-1]).to eq(fiboseq[-2] + fiboseq[-3])
+    # expect(@sumevnseq.sumevnfibo).to be(even)
   end
 
 end
