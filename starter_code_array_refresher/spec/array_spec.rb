@@ -5,16 +5,19 @@ describe 'working through various arrays' do
   context 'standard 1 dimensional arrays' do
     dog_breeds = ['jack russell', 'boxer', 'bloodhound', 'greyhound']
 
-    it 'the first entry should equal boxer' do
+    it 'the first entry should equal jack russell' do
       # Use array methods only
+      expect(dog_breeds[0]).to eq('jack russell')
     end
 
     it 'the last entry should equal greyhound' do
       # Use array methods only
+      expect(dog_breeds[-1]).to eq('greyhound')
     end
 
     it 'the second entry should equal boxer' do
       # Use array index only i.e. array[0]
+      expect(dog_breeds[1]).to eq('boxer')
     end
 
   end
@@ -25,10 +28,12 @@ describe 'working through various arrays' do
 
     it 'the first dog name should equal archie' do
       # Use a mix of array methods and indexes
+      expect(dog_breed_and_names[0][1]).to eq('archie')
     end
 
     it 'the second last entry should be a bloodhound called droopy' do
       # Use array index only i.e. array[0]
+      expect(dog_breed_and_names[-2]).to eq('bloodhound', 'droopy')
     end
 
     it 'the second entry should be a boxer' do
