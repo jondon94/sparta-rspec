@@ -6,8 +6,8 @@ describe EvnFiboseq do
     @sumevnseq = EvnFiboseq.new
   end
 
-  it 'should have values of the fibonacci sequence in order' do
-    # expect(@sumevnseq.sumevnfibo).to be(even)
+  it 'should have even nubmer of the fibonacci sequence from suma' do
+    expect(@evnfibo).to be % 2 == 0
   end
 
 end
