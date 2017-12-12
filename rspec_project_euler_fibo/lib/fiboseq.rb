@@ -17,11 +17,13 @@ class EvnFiboseq
         @evnseq << n
       end
     end
-    puts evnseq
+    # puts evnseq
     x = @evnseq.sum
-    p x
   end
 
+  def evnchecker?(num1, num2)
+    (num1 % num2).zero?
+  end
 end
 
 tst = EvnFiboseq.new
