@@ -33,11 +33,12 @@ describe 'working through various arrays' do
 
     it 'the second last entry should be a bloodhound called droopy' do
       # Use array index only i.e. array[0]
-      expect(dog_breed_and_names[-2]).to eq('bloodhound', 'droopy')
+      expect(dog_breed_and_names[-2]).to eq(['bloodhound', 'droopy'])
     end
 
     it 'the second entry should be a boxer' do
       # Use array index only i.e. array[0]
+      expect(dog_breed_and_names[1][0]).to eq('boxer')
     end
 
   end
@@ -47,14 +48,22 @@ describe 'working through various arrays' do
 
     it 'the last dog should be called streak and is an old dog' do
       # Use a mix of array methods and indexes
+      expect(dog_breed_names_age_and_health.last[1]).to eq('streak')
+      expect(dog_breed_names_age_and_health.last[-1][-1]).to eq('old dog')
     end
 
     it 'the bloodhound should be 6 years old and healthy' do
       # Use a mix of array methods and indexes
+      expect(dog_breed_names_age_and_health[-2].last[0]).to eq(6)
+      expect(dog_breed_names_age_and_health[-2].last[1]).to eq('healthy')
+
     end
 
     it 'the first dog should be a jack russell and 4 years old' do
       # Use array index only i.e. array[0]
+      expect(dog_breed_names_age_and_health.first[0]).to eq('jack russell')
+      expect(dog_breed_names_age_and_health.first[-1][0]).to eq(4)
+
     end
 
   end
