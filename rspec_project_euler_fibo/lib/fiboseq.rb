@@ -21,8 +21,12 @@ class EvnFiboseq
     x = @evnseq.sum
   end
 
-  def evnchecker?(num1, num2)
-    (num1 % num2).zero?
+  def evnchecker?(x, num2)
+    (x % num2).zero?
+  end
+
+  def seqchecker?(seq1, seq2)
+    seq0 = seq1 + seq2
   end
 end
 
