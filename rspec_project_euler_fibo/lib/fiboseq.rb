@@ -11,7 +11,7 @@ class EvnFiboseq
   end
 
   def evnfibo
-    @evnseq = [0]
+    @evnseq = []
     fiboseq.each do |n|
       if (n % 2 == 0)
         @evnseq << n
